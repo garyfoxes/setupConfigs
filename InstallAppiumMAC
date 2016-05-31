@@ -8,6 +8,9 @@ brew update
 brew install maven
 sudo brew cask install java
 brew install android-sdk
+brew install node
+npm install -g appium
+
 
 #edit paths
 vim ~/.bash_profile
