@@ -16,13 +16,18 @@ adb start-server
 
 #GIT COMMANDS
 
-git checkout (branch name)
+git checkout (branch name) 
+
 git branch myname
+
 git checkout -b feature-fix_minigame_test 
+
 git pull origin master
 
 git add *.java
+
 git commit --amend -m "Fix this "
+
 git commit -m "commit mnessage"
 
 PUSHING
