@@ -41,22 +41,29 @@ Amending Previous commit
 Stage the extra changes like would for a normal commit
 
 git add .
+
 Then just commit with the --amend argument
+
 git commit --amend
+
 git diff [the changed file]
 
 DELETE BRANCH LOCALLY
+
 git branch -D (branch name)
 
 Change Branch Name
 git branch -m <oldname> <newname>
 
 DELETE BRANCH REMOTELY
+
 git push origin --delete <branchName>
 
 Check Config List
+
 git config --list
 
 Set Remote Url
+
 git remote set-url origin git://new.url.here
 
