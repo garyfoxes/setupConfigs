@@ -1,6 +1,10 @@
 # ADB COMMANDS
 adb devices
 
+android avd(launches avd manager)
+
+android sdk(launches sdk manager)
+
 emulator -avd Android4 -dns-server 8.8.8.8
 
 adb install < path_to_apk_file> (installs apk to device or emulator)
