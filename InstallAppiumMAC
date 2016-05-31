@@ -1,0 +1,26 @@
+#InstallAppiumOnMAC
+xcode-select –-install (Install X-Code Command Line Tools)
+
+ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)” (Install Homebrew)
+
+brew doctor
+brew update
+brew install maven
+sudo brew cask install java
+brew install android-sdk
+
+#edit paths
+vim ~/.bash_profile
+
+type 'a' to go to Insert mode
+
+Edit environment variables(Maven,Java,Android SDK) e.g: 
+
+export M2_HOME=/path/to/maven
+
+export M2=$M2_HOME/bin
+
+export PATH=$M2:$PATH
+
+press 'esc'
+type :wq! to save and quit(:w! just to save)
