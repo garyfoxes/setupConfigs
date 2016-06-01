@@ -6,10 +6,12 @@ ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 brew doctor
 brew update
 brew install maven
+brew install git
 sudo brew cask install java
 brew install android-sdk
 brew install node
 npm install -g appium
+npm install -g appium-doctor
 
 
 #edit paths
@@ -17,7 +19,7 @@ vim ~/.bash_profile
 
 type 'a' to go to Insert mode
 
-Edit environment variables(Maven,Java,Android SDK) e.g: 
+Edit environment variables(Maven,Java,Android SDK,Android Home) e.g: 
 
 export M2_HOME=/path/to/maven
 
