@@ -12,6 +12,8 @@ brew install android-sdk
 brew install node
 npm install -g appium
 npm install -g appium-doctor
+appium-doctor(Makes sure everything is installed correct)
+appium & (launches appium server)
 
 
 #edit paths
