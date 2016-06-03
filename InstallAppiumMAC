@@ -29,5 +29,15 @@ export M2=$M2_HOME/bin
 
 export PATH=$M2:$PATH
 
+sample file
+export PATH=$PATH:/Users/gfox/Documents/tools/android-sdk-macosx/platform-tools
+export PATH=$PATH:/Users/gfox/Documents/tools/android-sdk-macosx/tools
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_HOME=/usr/local/Cellar/maven/3.3.9/libexec
+export M2=$M2_HOME/bin
+export PATH=$PATH:$M2
+export PATH=$PATH:$JAVA_HOME/bin
+export ANDROID_HOME=/Users/gfox/Documents/tools/android-sdk-macosx
+
 press 'esc'
 type :wq! to save and quit(:w! just to save)
