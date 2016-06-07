@@ -14,6 +14,7 @@ npm install -g appium
 npm install -g appium-doctor
 appium-doctor(Makes sure everything is installed correct)
 appium & (launches appium server)
+brew install curl
 
 
 #edit paths
