@@ -1,0 +1,5 @@
+
+Install sql community server from the downloads section dmg file for 64 bit
+Edit PATH environment variable to use mysql /usr/local/mysl/bin
+To start the server go to System Preferences/mysql and start the server
+http://stackoverflow.com/questions/33467337/reset-mysql-root-password-using-alter-user-statement-after-install-on-mac (for changing root passord)
