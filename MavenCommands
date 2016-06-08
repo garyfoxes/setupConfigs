@@ -7,5 +7,5 @@ Sample Example
 mvn archetype:generate -DgroupId=com.howtodoinjava -DartifactId=intelliJDemo
 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
-mvn idea:idea
+mvn idea:idea (links to your idea)
 
