@@ -9,3 +9,6 @@ mvn archetype:generate -DgroupId=com.howtodoinjava -DartifactId=intelliJDemo
 
 mvn idea:idea (links to your idea)
 
+mvn -Dtest=IOSAppiumTest test (runs all tests inside class called 'IOSAppiumTest'. Ensure surefire plugin is in your pom)
+mvn -Dtest=IOSAppiumTest#method1 test (runs single method called 'method1' inside a test class called IOSAppiumTest)
+
