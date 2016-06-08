@@ -1,4 +1,4 @@
-*Maven Commands
+#Maven Commands
 
 mvn archetype:generate (this creates a new project from the command line, fill in values for groupId, artifactId)
 
