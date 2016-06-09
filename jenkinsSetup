@@ -1,3 +1,25 @@
 Download https://jenkins.io/
 sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist (Stop Jenkins)
-sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist (Start Jenkins) or java -jar /Applications/Jenkins/jenkins.war(Start Jenkins)
+
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist (Start Jenkins) 
+or java -jar /Applications/Jenkins/jenkins.war -httpPort=8080(Start Jenkins,httpPort is optional)
+
+Configure Java
+Name = jdk1.8.0_92
+JavaHome = /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+
+Configure Maven
+Name = maven-3.3.9
+MavenHome = /usr/local/Cellar/maven/3.3.9/libexec
+
+To get email working
+java -Dmail.smtp.starttls.enable="true" -jar /Applications/Jenkins/jenkins.war
+Enter system admin dress e.g garythinlizzy@hotmail.com
+smtp.live.com (for hotmail smpt server)
+port 25
+use hotmail credentials for smtp authentication connect
+
+
+
+
+
