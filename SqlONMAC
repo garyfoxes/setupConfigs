@@ -1,6 +1,8 @@
 
 Install sql community server from the downloads section dmg file for 64 bit
 
+Install workbench after that as well
+
 Edit PATH environment variable to use mysql /usr/local/mysl/bin
 
 To start the server go to System Preferences/mysql and start the server 
@@ -12,3 +14,8 @@ mysql -u root -p (Connect to server in command line)
 http://stackoverflow.com/questions/33467337/reset-mysql-root-password-using-alter-user-statement-after-install-on-mac (for changing root passord)
 
 https://dev.mysql.com/doc/sakila/en/sakila-installation.html (for importing sample schemas and tables)
+
+Sample Commands 
+create table Employeeinfo(name varchar(20), id int, location varchar(20),age int);
+describe Employeeinfo;//this gives the schema of the table
+
