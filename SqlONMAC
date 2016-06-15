@@ -20,4 +20,6 @@ drop table Employeeinfo;
 create table Employeeinfo(name varchar(20), id int not null primary key, location varchar(20),age int);
 describe Employeeinfo;
 insert into Employeeinfo values('Joe',1,'new jersey',29);
+show databases;
+USE databaseName // can switch databases if needs be
 
