@@ -13,3 +13,19 @@ mvn -Dtest=IOSAppiumTest test (runs all tests inside class called 'IOSAppiumTest
 mvn -Dtest=IOSAppiumTest#method1 test (runs single method called 'method1' inside a test class called IOSAppiumTest)
 mvn test -PIOSApp (runs a specific profile in thats been created in your pom)
 
+Build a jar file
+  <plugin>
+                <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.paddypower.userjourneys.selenium.UserJourneys</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+   </plugin>
+
