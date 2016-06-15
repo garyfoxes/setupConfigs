@@ -17,7 +17,7 @@ https://dev.mysql.com/doc/sakila/en/sakila-installation.html (for importing samp
 
 Sample Commands 
 drop table Employeeinfo;
-create table Employeeinfo(name varchar(20), id int not null, location varchar(20),age int);
+create table Employeeinfo(name varchar(20), id int not null primary key, location varchar(20),age int);
 describe Employeeinfo;
 insert into Employeeinfo values('Joe',1,'new jersey',29);
 
