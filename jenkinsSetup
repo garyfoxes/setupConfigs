@@ -36,4 +36,8 @@ If you want to shedule your build every 5 minutes, this will do the job : */5 * 
 If you want to shedule your build every day at 8h00, this will do the job : 0 8 * * *
 
 
+Use ngrok to expose your Jenkins server download here https://ngrok.com/download
+When you download it put the executable file in /usr/local/bin
+To start a tunnel enter in the command line ngrok http 8080
+You will see the forwarding address that has been created. This can be accessible with anyone who has an internet connection
 
