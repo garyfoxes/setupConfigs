@@ -1,5 +1,5 @@
 #InstallAppiumOnMAC
-xcode-select –-install (Install X-Code Command Line Tools)
+xcode-select –-install (Install X-Code Command Line Tools)(Do not copy and paste)
 
 ruby -e “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)” (Install Homebrew)
 
