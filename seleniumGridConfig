@@ -10,3 +10,39 @@ java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.
 Can also configure custom configurations like the following 
 java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.168.192.16:4444/grid/register/ -port 5555 -browser browserName=firefox,version=39.0,maxinstances=1,platform=MAC  
 Can use spaces if you wrap from browserName in ""
+
+CONFIG NODE USING JSON FILE
+java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -port 5555
+
+SAMPLE JSON FILE("maxSession" is the amount of broswers that can run in parallell)("hubHost" is ipAddress name or can be "localhost")
+{
+"capabilities":
+[
+{
+"browserName": "chrome",
+"maxInstances": 1
+},
+{
+"browserName": "firefox",
+"maxInstances": 1
+},
+{
+"browserName": "safari",
+"maxInstances": 1
+}
+],
+"configuration":
+{
+"port":5555,
+"hubPort":4444,
+"hubHost":"192.168.192.16",
+"registerCycle":10000,
+"register":true,
+"timeout":30000,
+"maxSession":2 
+}
+
+
+
+}
+
