@@ -7,3 +7,6 @@ Verify selenium hub is up and running by verifying the url http://localhost:4444
 A hub can also be a node(was doing this for testing purposes)thup a nodee following can set 
 java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.168.192.16:4444/grid/register/ -port 5555
 
+Can also configure custom configurations like the following 
+java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.168.192.16:4444/grid/register/ -port 5555 -browser browserName=firefox,version=39.0,maxinstances=1,platform=MAC  
+
