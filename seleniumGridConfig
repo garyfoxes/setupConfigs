@@ -4,3 +4,6 @@ To run hub run this command in the command line after navigating to server direc
 java -jar selenium-server-standalone-2.53.0.jar -role hub
 Verify selenium hub is up and running by verifying the url http://localhost:4444/grid/console(or whatever port it is running on)
 
+A hub can also be a node(was doing this for testing purposes)thup a nodee following can set 
+java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.168.192.16:4444/grid/register/ -port 5555
+
