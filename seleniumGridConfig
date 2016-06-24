@@ -14,6 +14,9 @@ Can use spaces if you wrap from browserName in ""
 CONFIG NODE USING JSON FILE
 java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -port 5555
 
+TO ADD CHROMEDRIVER TO THE NODE(chromedriver is in the same location as the json file config)
+java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -Dwebdriver.chrome.driver=\chromedriver2 -port 5555
+
 SAMPLE JSON FILE("maxSession" is the amount of broswers that can run in parallell)("hubHost" is ipAddress name or can be "localhost")
 {
 "capabilities":
