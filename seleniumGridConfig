@@ -1,1 +1,4 @@
 Download selenium server standalone jar from http://docs.seleniumhq.org/download/
+To run hub run this command in the command line after navigating to server directory
+java -jar selenium-server-standalone-2.53.0.jar -role hub
+
