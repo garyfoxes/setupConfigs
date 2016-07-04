@@ -4,7 +4,7 @@ To run hub run this command in the command line after navigating to server direc
 java -jar selenium-server-standalone-2.53.0.jar -role hub
 Verify selenium hub is up and running by verifying the url http://localhost:4444/grid/console(or whatever port it is running on)
 
-A hub can also be a node(was doing this for testing purposes)thup a nodee following can set 
+A hub can also be a node(was doing this for testing purposes)to setup a node you can set 
 java -jar selenium-server-standalone-2.53.0.jar -role webdriver -hub http://192.168.192.16:4444/grid/register/ -port 5555
 
 Can also configure custom configurations like the following 
@@ -14,8 +14,20 @@ Can use spaces if you wrap from browserName in ""
 CONFIG NODE USING JSON FILE
 java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -port 5555
 
-TO ADD CHROMEDRIVER TO THE NODE(chromedriver is in the same location as the json file config)
+TO ADD CHROMEDRIVER TO THE NODE(chromedriver is in the same location as the json file config,on Windows do not need the "\" when setting the path and include the .exe)
 java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -Dwebdriver.chrome.driver=\chromedriver2 -port 5555
+
+WHEN RUNNING OFF A VIRTUAL MACHINE
+Set up a bridged adapter(this allows communication between hub and node) in the network settings(If the adapters tab is greyed out you need to power off the VM and then configure the adapter)
+A NAT adapter is already setup, this allows you to connect to the app
+When connecting to node to the hub there was strange issues happening. I got it working by:
+
+1.Disabling the bridged adapter
+2.Run the query to connect the node to the hub(it should connect)
+3.Enable the bridged adapter(this is so the hub can ping the node)
+
+
+
 
 SAMPLE JSON FILE("maxSession" is the amount of broswers that can run in parallell)("hubHost" is ipAddress name or can be "localhost")
 {
@@ -44,8 +56,5 @@ SAMPLE JSON FILE("maxSession" is the amount of broswers that can run in parallel
 "timeout":30000,
 "maxSession":2 
 }
-
-
-
 }
 
