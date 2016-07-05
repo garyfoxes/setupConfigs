@@ -25,6 +25,11 @@ When connecting to node to the hub there was strange issues happening. I got it 
 1.Disabling the bridged adapter
 2.Run the query to connect the node to the hub(it should connect)
 3.Enable the bridged adapter(this is so the hub can ping the node)
+ ***************** OR **************************
+ 1. Disabling the NAT on the Windows settings(not the vm settings) via the network settings -> change adapter settings
+ 2. run ipconfig to verify that you disabled the correct adapter(should see 1 IPv4 address that is similar to your host machine address)
+ 3. Run the command to connect the node to the hub
+
 
 
 
