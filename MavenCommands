@@ -13,6 +13,9 @@ mvn -Dtest=IOSAppiumTest test (runs all tests inside class called 'IOSAppiumTest
 mvn -Dtest=IOSAppiumTest#method1 test (runs single method called 'method1' inside a test class called IOSAppiumTest)
 mvn test -PIOSApp (runs a specific profile in thats been created in your pom)
 
+FOR SETTING UP BEHIND A PROXY(shows how to configure your settings.xml)
+http://stackoverflow.com/questions/25911623/problems-using-maven-and-ssl-behind-proxy
+
 Build a jar file
   <plugin>
                 <!-- Build an executable JAR -->
