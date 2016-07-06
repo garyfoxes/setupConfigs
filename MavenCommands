@@ -31,7 +31,9 @@ IF YOU HAVE A PROXY HERE IS A SAMPLE CONFIG TO ADD TO SETTINGS.xml
     </proxies>
 
 Build a jar file
-  <plugin>
+  <build>
+        <plugins>
+            <plugin>
                 <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -44,8 +46,9 @@ Build a jar file
                         </manifest>
                     </archive>
                 </configuration>
-   </plugin>
-   
+            </plugin>
+        </plugins>
+    </build>
       <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
