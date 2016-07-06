@@ -16,6 +16,20 @@ mvn test -PIOSApp (runs a specific profile in thats been created in your pom)
 FOR SETTING UP BEHIND A PROXY(shows how to configure your settings.xml)
 http://stackoverflow.com/questions/25911623/problems-using-maven-and-ssl-behind-proxy
 
+IF YOU HAVE A PROXY HERE IS A SAMPLE CONFIG TO ADD TO SETTINGS.xml
+ <proxies>
+        <proxy>
+            <id>ppwebsense3</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <username>PPOWER\gfox</username>
+            <password>Ireland2016</password>
+            <host>ppwebsense3</host>
+            <port>8080</port>
+            <nonProxyHosts>172.*.*.*|autotestweb-001</nonProxyHosts>
+        </proxy>
+    </proxies>
+
 Build a jar file
   <plugin>
                 <!-- Build an executable JAR -->
