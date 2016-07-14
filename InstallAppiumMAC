@@ -5,7 +5,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew doctor
 brew update
-brew install maven
+brew install maven(install java first)
 brew install git
 sudo brew cask install java
 brew install android-sdk
