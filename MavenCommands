@@ -3,6 +3,10 @@
 ########### For Reusing Jars In Different Projects ###############
 https://softwarecave.org/2014/06/14/adding-external-jars-into-maven-project/
 
+########## LATEST VERSION OF EXTENT REPORTS ##########
+maven repo(https://www.versioneye.com/java/com.aventstack:extentreports/3.0.0)
+Docs here https://github.com/anshooarora/extentreports-java
+
 mvn package (generates jar file, see appium project which does it and generates custom jar name based on pom.xml)
 
 mvn archetype:generate (this creates a new project from the command line, fill in values for groupId, artifactId)
