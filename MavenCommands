@@ -1,5 +1,10 @@
 #Maven Commands
 
+########### For Reusing Jars In Different Projects ###############
+https://softwarecave.org/2014/06/14/adding-external-jars-into-maven-project/
+
+mvn package (generates jar file, see appium project which does it and generates custom jar name based on pom.xml)
+
 mvn archetype:generate (this creates a new project from the command line, fill in values for groupId, artifactId)
 
 Sample Example 
