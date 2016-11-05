@@ -22,6 +22,15 @@ mvn -Dtest=IOSAppiumTest test (runs all tests inside class called 'IOSAppiumTest
 mvn -Dtest=IOSAppiumTest#method1 test (runs single method called 'method1' inside a test class called IOSAppiumTest)
 mvn test -PIOSApp (runs a specific profile in thats been created in your pom)
 
+To pass a parameter from commandline to pom.xml 
+  <systemPropertyVariables>
+         <testVariable>${testV}</testVariable>
+  </systemPropertyVariables>
+Its passed using the command below
+ mvn test -PAndroidApp -DtestV=QA
+ This can be picked up in the testNG xml file like so
+ <parameter name="myName" value="${testVariable}123"/>
+
 FOR SETTING UP BEHIND A PROXY(shows how to configure your settings.xml)
 http://stackoverflow.com/questions/25911623/problems-using-maven-and-ssl-behind-proxy
 
