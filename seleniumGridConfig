@@ -18,6 +18,9 @@ TO ADD CHROMEDRIVER TO THE NODE(chromedriver is in the same location as the json
 java -jar selenium-server-standalone-2.53.0.jar -role node -nodeConfig grid_node.json -Dwebdriver.chrome.driver=\chromedriver2 -port 5555
 
 WHEN RUNNING OFF A VIRTUAL MACHINE
+**** TRY AND HAVE CONNECTIONS OVER ETHERNET IF POSSIBLE ********
+***** TURN OFF FIREWALL ON VM ALSO TO ALLOW COMMUNICATION BETWEEN HOST AND VM ***************
+
 Set up a bridged adapter(this allows communication between hub and node) in the network settings(If the adapters tab is greyed out you need to power off the VM and then configure the adapter)
 A NAT adapter is already setup, this allows you to connect to the app
 When connecting to node to the hub there was strange issues happening. I got it working by:
