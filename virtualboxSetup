@@ -7,3 +7,9 @@ https://www.microsoft.com/en-gb/software-download/windows10ISO
 Good site on how to install
 http://osxdaily.com/2015/03/25/install-run-windows-10-mac-virtualbox-os-x/
 
+Alternate Way Of Pre Installing
+https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+In storage can add it as a hard disk in Settings->Storage->Controller IDE
+Create Snapshot as license expires after 90 days
+
+
