@@ -17,6 +17,7 @@ appium & (launches appium server)
 brew install curl
 (sample curl command) curl -u gfox:261ec9d3-5015-46a2-81c7-7960e448f868 -X POST -H "Content-Type: application/octet-stream" https://saucelabs.com/rest/v1/storage/gfox/myApp.zip?overwrite=true --data-binary @/Users/gfox/Downloads/ios-uicatalog-master.zip
 
+Install mvn https://github.com/creationix/nvm
 
 #edit paths
 vim ~/.bash_profile
