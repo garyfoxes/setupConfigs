@@ -8,7 +8,7 @@ brew update
 brew install maven(install java first)
 brew install git
 sudo brew cask install java
-brew install android-sdk (if platform tools are not installed use this android update sdk --no-ui --filter 'platform-tools')
+brew install android-sdk (if platform tools are not installed use this android update sdk --no-ui --filter 'platform-tools') or look at this page https://stackoverflow.com/questions/17511431/android-missing-platform-tools
 android sdk is normally installed to /usr/local/Cellar/android-sdk/VERSION_NUMBER
 brew install node
 npm install -g appium
