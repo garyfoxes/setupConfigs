@@ -1,7 +1,7 @@
 Using by.className does not work seem to work in safari with protractor, best to use xpath or css selectors.
 
 
-#Safari Workaround With Dropdown In Iframe
+*Safari Workaround With Dropdown In Iframe
 
 Disable Cross-Origin Restrictions In Develop Menu On Safari
 To access iframe element see this page http://stackoverflow.com/questions/1088544/javascript-get-element-from-within-an-iframe
