@@ -3,7 +3,7 @@ Install sql community server from the downloads section dmg file for 64 bit
 
 Install workbench after that as well
 
-Edit PATH environment variable to use mysql /usr/local/mysl/bin
+Edit PATH environment variable to use mysql /usr/local/mysql/bin
 
 To start the server go to System Preferences/mysql and start the server 
 
