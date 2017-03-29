@@ -1,0 +1,13 @@
+#Kill Firefox
+
+pkill -f firefox or pkill firefox
+
+#Kill Chrome
+
+pkill -f "Google Chrome" or pkill "Google Chrome"
+
+#Listen To See If A Port Is In Use
+lsof -n -i:$PORT (Substitute $PORT with the port number or comma seperated list of port numbers)
+
+#Kill Process Number
+kill (processNumber) you can get this from the command above
