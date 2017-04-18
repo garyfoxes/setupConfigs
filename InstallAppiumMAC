@@ -12,6 +12,7 @@ brew install android-sdk (if platform tools are not installed use this android u
 android sdk is normally installed to /usr/local/Cellar/android-sdk/VERSION_NUMBER
 brew install node
 npm install -g appium
+brew install carthage(had problems (when running ios simulator) where had to reinstall this through brew uninstall carthage, brew install carthage)
 npm install -g appium-doctor
 appium-doctor(Makes sure everything is installed correct)
 appium & (launches appium server)
