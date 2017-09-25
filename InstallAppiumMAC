@@ -9,6 +9,7 @@ brew install maven(install java first)
 brew install git
 brew cask install java (To install specific version of java look here https://stackoverflow.com/questions/26252591/mac-os-x-and-multiple-java-versions)
 brew install android-sdk (if platform tools are not installed use this android update sdk --no-ui --filter 'platform-tools') or look at this page https://stackoverflow.com/questions/17511431/android-missing-platform-tools
+brew install Caskroom/cask/android-sdk(if the previous the command is deprecated)
 android sdk is normally installed to /usr/local/Cellar/android-sdk/VERSION_NUMBER
 brew install node
 npm install -g appium
