@@ -18,3 +18,8 @@ adb pull /data/app/com.whatsapp-21.apk C:\Users(copies apk to your laptop at a s
 adb kill-server
 
 adb start-server
+
+Run Emulator Headless 
+ emulator -avd emulator_name -no-skin -no-window
+ emulator -avd emulator_name -partition-size 1024 -scale 0.25 -camera-back webcam0 -no-boot-anim -no-window
+ emulator -avd emulator_name -partition-size 1024 -scale 0.25 -camera-back webcam0 -no-boot-anim
