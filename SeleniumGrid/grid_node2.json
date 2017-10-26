@@ -3,15 +3,21 @@
   [
     {
       "browserName": "firefox",
-      "maxInstances": 5
-    }
+	  "moz:firefoxOptions": 
+	  {
+	  "log": {"level": "trace"}
+	  },
+      "maxInstances": 5,
+	  "platform": "WINDOWS"
+	  }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
   "cleanUpCycle": 6000,
-  "timeout": 50,
   "maxSession": 5,
-  "port": 5556,
+  "port": 4444,
+  "downPollingLimit": 3,
+  "nodeStatusCheckTimeout": 60000,
   "register": true,
   "registerCycle": 5000,
-  "hub": "http://localhost:4444"
+  "hub": "http://192.168.100.233:4444"
 }
