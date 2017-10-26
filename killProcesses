@@ -11,3 +11,6 @@ lsof -n -i:$PORT (Substitute $PORT with the port number or comma seperated list 
 
 #Kill Process Number
 kill (processNumber) you can get this from the command above
+
+sudo lsof -i tcp:4723
+kill -9 18619
