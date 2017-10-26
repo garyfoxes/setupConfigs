@@ -1,0 +1,2 @@
+java -Dwebdriver.chrome.driver=chromedriver2.32.exe -Dwebdriver.chrome.logfile=chromedriver.log -jar selenium-server-standalone-3.5.3.jar -role node -nodeConfig grid_node1.json -log chrome_commands.log
+ taskkill /F /IM chromedriver2.32.exe
