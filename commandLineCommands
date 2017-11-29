@@ -14,3 +14,10 @@ kill (processNumber) you can get this from the command above
 
 sudo lsof -i tcp:4723
 kill -9 18619
+
+
+Windows
+netstat -a -n -o | grep "4723" find process by port
+taskkill /F /IM chromedriver2.33.exe kill task by process name
+taskkill /PID <pid> kill process by process id
+
